@@ -6,7 +6,7 @@
 
 - The candidate needs to do a hands-on assignment which will test his/her knowledge of React, JS, and logic too.
 - The assignment for this round will be related to Data Grid will the following problem statement
-- Create a new branch from master branch with your firstname_lastname.
+- Create a new branch from master branch with name as your firstname_lastname.
 - Raise the PR later once done with assignments
 
 Assignment Description:
