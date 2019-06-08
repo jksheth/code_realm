@@ -2,6 +2,9 @@
 
 # Round 1 - (Apollo)
 
+## Create your branch first (Mandatory)
+Branch name must be **FirstName_LastName**
+
 ## Assignments
 
 - The candidate needs to do a hands-on assignment which will test his/her knowledge of React, JS, and logic too.
