@@ -5,8 +5,13 @@ import "./App.css";
 import axios from 'axios';
 
 class App extends Component {
+
   state = {
   candidates:this.GetCandidates()
+}
+
+componentDidMount(){
+  this.setState({candidates:this.GetCandidates()});
 }
 
 

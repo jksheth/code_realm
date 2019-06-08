@@ -4,7 +4,7 @@ import "../index.css";
 
 class GridRow extends Component {
   render() {
-      const {Id,firstName,LastName,email,phone} = this.props;
+      const {Id,firstName,LastName,email,phone} = this.props.candidate;
     return (
       <div className="row">
        <div className="col"> <input type="checkbox" onChange={this.props.onRowSelect.bind(this, Id)}/></div>
@@ -19,7 +19,7 @@ class GridRow extends Component {
 }
 //PropTypes
 GridRow.propTypes = {
-  candidate: PropTypes.array.isRequired,
+  candidate:PropTypes.object.isRequired,
   onRowSelect: PropTypes.func.isRequired
 }
 
