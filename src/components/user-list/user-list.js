@@ -27,7 +27,15 @@ const UserList = (props) => {
     }
 
     const deleteUsers = () => {
-        
+        console.log('deleting the user');
+        // TODO: Need to correct this logic, should use underscore here for array manipulation
+        // let newList = []
+        // userList.forEach(user => {
+        //     if (selected.indexOf(user.id) === -1) {
+        //         newList.push(user);
+        //     }
+        // })
+        // setUserList(newList);
     }
 
     const addToSelected = (index) => {
@@ -36,7 +44,6 @@ const UserList = (props) => {
         } else {
             setSelected(selected.concat(index));
         }
-        console.log('selected is', selected);
     }
 
     return (
@@ -68,7 +75,7 @@ const UserList = (props) => {
                     <div className="action-buttons">
                         <button onClick={gotoAdd}>Add</button>
                         <button disabled= {selected.length === 1 ? '': 'disabled' } onClick={gotoAdd}>Edit</button>
-                        <button disabled= {selected.length ? '': 'disabled' } >Delete</button>
+                        <button onClick={deleteUsers} disabled= {selected.length ? '': 'disabled' } >Delete</button>
                     </div>
                 </div>
             }
