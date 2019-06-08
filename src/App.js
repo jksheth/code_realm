@@ -1,14 +1,19 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import HireList from "./HireList";
+import EditItem from "./EditItem";
+import AddItem from "./AddItem";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+      <Router>
+        <Route exact path="/" component={HireList} />
+        <Route path="/edit" component={EditItem} />
+        <Route path="/add" component={AddItem} />
+      </Router>
     </div>
   );
 }
