@@ -1,14 +1,25 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useEffect, useState } from 'react';
+import Table from './Components/Table';
+import Controls from './Components/Controls';
+import SelectionProvider from './Components/SelectionProvider';
+import './App.css';
 
 function App() {
+  const [rows, updateRows] = useState([]);
+
+  useEffect(() => {
+    fetch('../assignment.json')
+      .then(res => res.json())
+      .then(res => updateRows(res));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+    <div className="app">
+      <SelectionProvider>
+        <h1 className="title">Hire List</h1>
+        <Table rows={rows} />
+        <Controls />
+      </SelectionProvider>
     </div>
   );
 }
