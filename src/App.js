@@ -2,7 +2,9 @@ import React, {useReducer} from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import reducer from "./reducer";
 
 import HiringData from "./HiringData";
 import Add from "./Add";

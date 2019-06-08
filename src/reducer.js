@@ -1,4 +1,5 @@
 
+
 function searchData(data, id) {
     //TODO: search for index of data with id
 }
@@ -13,7 +14,7 @@ function reducer(state, action) {
             newData[index] = action.data;
             return { data: newData};
         case "delete":
-                return {}
+            return {}
     }
 }
 

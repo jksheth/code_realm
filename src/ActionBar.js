@@ -5,7 +5,7 @@ function ActionBar() {
     return (
         <>
             <button ><Link to={'/add/'}>Add</Link></button>
-            <button ><Link to={'/edit/'}>Add</Link></button>
+            <button ><Link to={'/edit/'}>Edit</Link></button>
             <button >Delete</button>
         </>
     );

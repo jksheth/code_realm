@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function CandidateForm() {
+function CandidateForm({onSubmit}) {
     return (
         <>
             <form>
@@ -49,7 +49,7 @@ function CandidateForm() {
                     <textarea  />
                 </div>
 
-                <button >Save</button>
+                <button onClick={onSubmit}>Save</button>
                 <button ><Link to={'/'}>Back</Link></button>
             </form>
         </>
