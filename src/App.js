@@ -1,16 +1,12 @@
-import React from "react";
-import logo from "./logo.svg";
+import React from 'react';
+import {ConnectedRouter} from 'react-router-redux';
+import ApplicationRoutes from './routes/Routes';
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
-    </div>
-  );
-}
+const App = ({history}) => (
+    <ConnectedRouter history={history}>
+        <ApplicationRoutes />
+    </ConnectedRouter>
+);
 
 export default App;
