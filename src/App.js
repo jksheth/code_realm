@@ -1,14 +1,15 @@
 import React from "react";
 import logo from "./logo.svg";
+import Hirelist from './Hirelist'
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+      {/* <header className="App-header">
+       
+      </header> */}
+       <Hirelist />
     </div>
   );
 }
