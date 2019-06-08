@@ -1,0 +1,43 @@
+export default {
+    userList: [
+        {
+            id: 1,
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'john@doe.com',
+            phoneNumber: '7788994455',
+            seekingJob: false,
+            age: 20,
+            workingRemotely: false,
+            address: 'nth Street, Pune',
+            isChecked: false,
+        },
+        {
+            id: 2,
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'john@doe.com',
+            phoneNumber: '7788994455',
+            seekingJob: false,
+            age: 20,
+            workingRemotely: false,
+            address: 'nth Street, Pune',
+            isChecked: false,
+        },
+        {
+            id: 3,
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'john@doe.com',
+            phoneNumber: '7788994455',
+            seekingJob: false,
+            age: 20,
+            workingRemotely: false,
+            address: 'nth Street, Pune',
+            isChecked: false,
+        }
+    ],
+    selectedUsers: [],
+    editEnabled: false,
+    deleteEnabled: false,
+}

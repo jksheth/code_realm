@@ -1,14 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import HireList from './components/hirelist';
+import { Router, Route } from 'react-router-dom';
+import history from './history';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+      <Router history={history}>
+        <Route exact path="/" component={HireList} />
+      </Router>
     </div>
   );
 }
