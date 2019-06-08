@@ -16,6 +16,7 @@ td{
     margin: auto;
     display: inline-block;
     text-align: center;
+    width: 33%;
 }
 
 .btn-primary {

@@ -1,14 +1,15 @@
 import React, {useState} from "react";
 import hires from "../hires";
+import { Link } from "react-router-dom";
 
 function HireList(){
   const [items, setItems] = useState(hires);
   const [selectedListItem, setSelectedListItem] = useState(hires);
 
 
-    let handleInputChange=(event)=> {
-      setSelectedListItem(event.target.checked);
-    };
+  let handleInputChange=(event)=> {
+    setSelectedListItem(event.target.checked);
+  };
 
   return(
       <div>
@@ -47,13 +48,23 @@ function HireList(){
 
         <div style={{marginTop:"32px"}}>
           <div className="button-container">
-            <button type="button" className="btn btn-primary">Add</button>
+            <Link to="/add">
+              <button
+                  type="button"
+                  className="btn btn-primary">
+                Add
+              </button>
+            </Link>
           </div>
           <div className="button-container">
+            <Link to="/add">
             <button type="button" className="btn btn-primary">Edit</button>
+            </Link>
           </div>
           <div className="button-container">
+            <Link to="/add">
             <button type="button" className="btn btn-primary">Delete</button>
+            </Link>
           </div>
 
         </div>
