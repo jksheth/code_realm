@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Route } from 'react-router-dom';
 
-function Button({title}) {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-      {title}
+const Button = ({ title, redirectTo }) => (
+    <Route render={({ history }) => (
+        <button
+            type='button'
+            onClick={() => { history.push( `/${redirectTo}`) }}
+        >
+            {title}
       </button>
-    </div>
-  );
-}
+    )} />
+)
 
 export default Button;
