@@ -1,3 +1,18 @@
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+table {
+  margin: 10px 0;
+  width: 80%;
+}
+
 .hire-list {
   display: flex;
   flex-direction: column;
