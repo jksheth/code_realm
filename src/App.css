@@ -31,3 +31,55 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* TODO: Write css in it's own component and use sass for sure */
+
+.user-list {
+  widht: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-list table td {
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.user-list .action-buttons {
+  display: flex;
+  text-align: center;
+}
+
+.user-list .action-buttons button {
+  flex: 0 0 300px;
+  background-color: blue;
+  color: white;
+  margin: 0 10px;
+  font-size:1.2em;
+}
+
+.user-list button[disabled] {
+  background-color: gray;
+}
+
+.add-edit {
+  text-align: center;
+}
+
+.add-edit .fields {
+  display:flex;
+ 
+}
+
+.add-edit .fieldColumns {
+  min-width: 300px;
+  display: flex;
+}
