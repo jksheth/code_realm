@@ -1,4 +1,4 @@
-[
+const hires=[
   {
     "firstName": "Micheal",
     "LastName": "Zane",
@@ -12,7 +12,7 @@
   },
   {
     "firstName": "Martin",
-    "LastName": "st",
+    "LastName": "Garrix",
     "phone": "+232490450934",
     "email": "martin.st@xyz.com",
     "address": "Time Square, New York",
@@ -109,4 +109,6 @@
     "jobSeeking": "Not open to offers",
     "age": ""
   }
-]
+];
+
+export default hires;
