@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-container {
+  align-content: center;
+}
+.btn-container .btn{
+    margin-right: 40px;
+}
