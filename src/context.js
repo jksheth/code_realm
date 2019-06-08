@@ -7,7 +7,7 @@ class MyProvider extends Component {
 
   render() {
     return (
-      <MyContext.Provider value={{ ...this.state }}>
+      <MyContext.Provider value={{ ...this.state, addData: (newdata) => this.setState({data: [...this.state.data, newdata]}) }}>
         {this.props.children}
       </MyContext.Provider>
     );

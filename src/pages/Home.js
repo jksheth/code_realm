@@ -4,9 +4,13 @@ import useLoadData from '../hooks/LoadData';
 import { MyConsumer } from '../context';
 
 const Home = () => {
-
+    
+    let ctx = useContext(MyConsumer);
     const [data] = useLoadData('https://github.com/jksheth/code_realm/blob/master/assignment.json');
     
+    data.forEach(item => {        
+        ctx.addData(item);
+    })
 
     const onDelete = () => {
 

@@ -12,7 +12,7 @@ const useLoadData = url => {
         // .then(function(result) {
         //     setData(result);
         // });
-        setData(rawData);
+        //setData(rawData);
     });
     
     return [rawData];
