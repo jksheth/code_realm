@@ -7,13 +7,32 @@ const HireList = (props) => {
 
     let [state, setState] = useState(initialState);
 
-    useEffect(() => {
-        
-    }, [state.userList, state, setState]);
-
     const validateAndEnableButtons = () => {
-        
+        let checkedCount = 0, shouldEdit = false, shouldDelete = false;
+        state.userList.forEach((user) => {
+            if (user.isChecked) {
+                checkedCount ++;
+            }
+        });
+        if (checkedCount == 1) {
+            shouldEdit = shouldDelete = true;
+        } else if (checkedCount > 1) {
+            shouldDelete = true;
+        }
+        if (checkedCount > 0) {
+            setState({
+                ...state,
+                editEnabled: shouldEdit,
+                deleteEnabled: shouldDelete,
+            });
+        }
     }
+    
+    useEffect(() => {
+        validateAndEnableButtons();
+    }, [state.userList, state, setState, validateAndEnableButtons]);
+
+    
 
     const handleAdd = () => {
         props.history.push('/add');
