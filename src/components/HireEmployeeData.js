@@ -132,13 +132,16 @@ class HireEmployeeData extends Component{
         //     console.log(err);
         // })
     }
+    deleteData=()=>{
+
+    }
     render(){
         return(
             <div>
                 <HireEmployee props={this.state.data}/>
                 <button className="btn-default">Add</button>
                 <button className="btn-default">Edit</button>
-                <button className="btn-default" onClick={this.deleteData}>Delete</button>
+                <button className="btn-default" onClick={this.deleteData()}>Delete</button>
             </div>
         )
     }
