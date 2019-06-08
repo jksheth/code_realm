@@ -31,3 +31,34 @@
     transform: rotate(360deg);
   }
 }
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-left input, .form-right input { 
+  width: 100px;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  table {
+    width: 500px;
+  }
+}
+
+table {
+  width: 800px;
+}
