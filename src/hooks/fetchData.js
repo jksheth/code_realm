@@ -15,7 +15,7 @@ const reducers  = (state, action) => {
                 if(action.candidate.id === candidate.id) {
                     return action.candidate;
                 } else {
-                    return state.candidate;
+                    return candidate;
                 }
             });
             return {...state, list : _list};

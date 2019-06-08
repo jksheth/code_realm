@@ -23,9 +23,9 @@ const HireList  = () => {
             }}>
                 <BrowserRouter>
             
-            <Route path="/" exact component={List} />
-            <Route path="/add" exact component={CandidateAdd} />
-            <Route path="/edit" exact component={CandidateEdit} />
+                <Route path="/" exact component={List} />
+                <Route path="/add" exact component={CandidateAdd} />
+                <Route path="/edit" exact component={CandidateEdit} />
             </BrowserRouter>
             </HireProvider>
             

@@ -17,7 +17,7 @@ const CandidateRow = (props) => {
             })
         } else {
             _context.dispatch({
-                type: 'UNSELECT_CANDIATE',
+                type: 'SELECT_CANDIATE', //Temp Unselect was causing problems
                 candidate: props.candidate
     
             }) 
