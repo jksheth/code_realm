@@ -1,15 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import HireList from "./HireList/hireList.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={HireList} />
+      </div>
+    </Router>
   );
 }
 
