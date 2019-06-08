@@ -1,14 +1,20 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import AddScreen from "./components/addScreen";
+import EditScreen from "./components/editScreen";
+import MainScreen from "./components/mainScreen";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+      
+      <Router>
+        <Route path="/" exact component={MainScreen} />
+        <Route path="/Add" exact component={AddScreen} />
+        <Route path="/Edit" exact component={EditScreen} />
+      </Router>
+      
     </div>
   );
 }
