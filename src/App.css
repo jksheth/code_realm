@@ -9,18 +9,25 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+.btnPanel{
+  display:flex;
+  justify-content: space-between;
+  margin-top:30px;
+}
+.btnPanel > button {
+  width:160px;
+  background-color:dodgerblue;
 }
 
 @keyframes App-logo-spin {
