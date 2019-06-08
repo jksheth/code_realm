@@ -1,15 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Provider } from 'react-redux';
 import "./App.css";
+// import 'bootstrap';
+import store from './store';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+
+import HireList from './components/HireList';
+import AddPerson from './components/AddPerson';
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+      <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component= {HireList}></Route>
+        <Route path="/add" component= {AddPerson}></Route>
+      </Switch>
+      </BrowserRouter>
     </div>
+    </Provider>
   );
 }
 
