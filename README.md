@@ -3,7 +3,7 @@
 # Round 1 - (Apollo)
 
 ## Create your branch first (Mandatory)
-Branch name must be **FirstName_LastName**
+- Branch name must be **FirstName_LastName**
 
 ## Assignments
 
