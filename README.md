@@ -16,7 +16,7 @@ Assignment Description:
 - Refer WireFrames (folder in this repo) for the development.
 - The app should be responsive and be written using React hooks and Context API’s.
 - Use assignment.json (in this repo) file for the data ( to handle any Async operation feel free to use any libs e.g Saga, Thunk, Axios, RxJs ).
-- Develop with conventional HTML code like <table/> or <div>.
+- Develop with conventional HTML tags like ***table*** or ***div***.
 - Do not use any other library except CSS framework such as Bootstrap (Which is already in the package.json)
 - On Clicking the Add/Edit button, the selected record should navigate to the respective page.
 - Should handle bulk Delete operations as well.
