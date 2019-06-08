@@ -1,0 +1,15 @@
+div.hire_list {
+    font-size: 1rem;
+}
+
+div.hire_list_item {
+    padding: .5rem;
+    border: 1px solid gray;
+}
+
+div.hire_list_item_header {
+    padding: .5rem;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    color: lightseagreen;
+}

@@ -1,0 +1,15 @@
+export const select = "Select Person";
+export const id = "ID";
+export const name = "First Name";
+export const lastName = "Last Name";
+export const email = "Email";
+export const emailAddress = "Email Address";
+export const phone = "Phone";
+export const seekingJob = "Seeking Job";
+export const age = "Age";
+export const workRemotely = "Work Remotely";
+export const yes = "Yes";
+export const no = "No";
+export const address = "Address";
+export const back = "Back";
+export const save = "Save";

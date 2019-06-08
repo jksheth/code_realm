@@ -1,14 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+
+import Hire from './components/Hire';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
+    <div className="App container top-margin">
+      <BrowserRouter>
+        <Hire></Hire>
+      </BrowserRouter>
     </div>
   );
 }
