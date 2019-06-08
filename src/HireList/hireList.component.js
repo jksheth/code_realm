@@ -148,12 +148,10 @@ class HireList extends React.Component {
         })
     }
     renderAddButton = () => (
-        <Button title="Add" redirectTo="add">
-        </Button>        
+        <Button title="Add" redirectTo="add" />
     )
     renderEditButton = () => (
-        <Button title="Edit" redirectTo="edit">
-        </Button>        
+        <Button title="Edit" redirectTo="edit" />
     )    
     render() {
         const { list } = this.state;
