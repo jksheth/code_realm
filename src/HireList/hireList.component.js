@@ -1,5 +1,5 @@
 import React from "react";
-import axios from 'axios';
+import { Link } from "react-router-dom";
 import "./hireList.css";
 import Button from "../CommonComponents/buttons";
 
@@ -148,8 +148,13 @@ class HireList extends React.Component {
         })
     }
     renderAddButton = () => (
-        <Button title="Add" />
+        <Button title="Add" redirectTo="add">
+        </Button>        
     )
+    renderEditButton = () => (
+        <Button title="Edit" redirectTo="edit">
+        </Button>        
+    )    
     render() {
         const { list } = this.state;
         return (
@@ -157,6 +162,7 @@ class HireList extends React.Component {
                 {this.renderListHeader()}
                 {this.renderList(list)}
                 {this.renderAddButton()}
+                {this.renderEditButton()}
             </div>
         );
     }
