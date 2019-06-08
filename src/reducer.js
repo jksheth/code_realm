@@ -7,7 +7,7 @@ function searchData(data, id) {
 function reducer(state, action) {
     switch(action.type){
         case "add":
-            return { data: state.data.concate(action.data)};
+            return { data: state.data.concat(action.data)};
         case "edit":
             let newData = state.data.splice();
             let index = searchData(state.data, action.data.id);

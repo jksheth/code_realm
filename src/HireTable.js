@@ -1,18 +1,7 @@
 import React from 'react';
 
-function HireTable() {
-    var hireData = [{
-        "firstName": "Micheal",
-        "LastName": "Zane",
-        "phone": "+12490450934",
-        "email": "micheal.zane@xyz.com",
-        "address": "Time Square, New York",
-        "workRemotely": true,
-        "date": "12/3/19",
-        "jobSeeking": "Not open to offers",
-        "age": "30"
-    }];
-    const tableRows = hireData.map((row)=>{
+function HireTable({data}) {
+    const tableRows = data.map((row)=>{
         return (
             <tr>
                 <td>

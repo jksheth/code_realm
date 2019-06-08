@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import HireTable from './HireTable';
 import ActionBar from "./ActionBar";
 
-function HiringData() {
+function HiringData({data}) {
     return (
         <>
-            <HireTable />
+            <HireTable data={data} />
             <ActionBar />
         </>
     );
