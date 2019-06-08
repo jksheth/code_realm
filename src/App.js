@@ -1,16 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
+import {BrowserRouter, Route} from 'react-router-dom';
+
+import {UserProvider} from './utils/UserContextProvider';
+import Users from './pages/Users';
+import UserForm from './pages/UserForm';
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Code Realm</p>
-      </header>
-    </div>
-  );
+
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <UserProvider>
+                    <div className="container">
+                        <Route path="/user/:id" component={UserForm}/>
+                        <Route exact path="/" component={Users}/>
+                    </div>
+                </UserProvider>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
