@@ -15,9 +15,9 @@ const isValidPhone = (phone) => {
     return re.test(phone);
 };
 
-const isValidAge = (phone) => {
+const isValidAge = (age) => {
     let re = /^\d{2}$/;
-    return re.test(phone);
+    return re.test(age);
 };
 
 const UserForm = (props) => {
@@ -35,7 +35,7 @@ const UserForm = (props) => {
     };
 
     const validateFields = () => {
-        return user.firstName && user.lastName
+        return user.firstName && user.LastName
             && isValidEmail(user.email) && isValidPhone(user.phone)
             && user.jobSeeking && user.worKRemotely
             && isValidAge(user.age) && user.address;
@@ -43,8 +43,8 @@ const UserForm = (props) => {
 
     const saveUser = (e) => {
         setFormSubmitted(true);
+        console.log("form submit", validateFields());
         if (!validateFields()) return;
-        console.log("form submit");
         if (selectedUser) {
             dispatch({type: UPDATE_USER, payload: user});
         } else {
@@ -173,7 +173,7 @@ const UserForm = (props) => {
                                         <Link className="btn btn-primary" to="/">
                                             Back
                                         </Link>
-                                        <button className="btn btn-primary" type="submit">
+                                        <button className="btn btn-primary" type="button" onClick={saveUser}>
                                             Save
                                         </button>
                                     </div>
